@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌍 Mapa Meteorológico</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="fondo"></div>
+    
+    <div class="contenedor">
+        <header class="cabecera">
+            <h1 class="titulo">🌎 Mapa Meteorológico</h1>
+            <p class="subtitulo">Encuentra cualquier lugar y conoce su clima en tiempo real</p>
+        </header>
+
+        <div class="buscador">
+            <input type="text" id="entrada-lugar" placeholder="Escribe una ciudad o lugar...">
+            <button id="btn-buscar">🔍 Buscar</button>
+        </div>
+
+        <div class="contenedor-mapa">
+            <div id="mapa"></div>
+        </div>
+
+        <div id="caja-info" class="caja-info">
+            <div class="mensaje-inicio">
+                <span class="icono">📍</span>
+                <h3>¡Comienza tu búsqueda!</h3>
+                <p>Escribe el nombre de un lugar para verlo en el mapa y consultar sus datos meteorológicos.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

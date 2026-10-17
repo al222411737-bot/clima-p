@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    min-height: 100vh;
+    padding: 30px 20px;
+    position: relative;
+}
+
+.fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0c4a6e 0%, #0369a1 50%, #0ea5e9 100%);
+    z-index: -2;
+}
+
+.contenedor {
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.cabecera {
+    text-align: center;
+    margin-bottom: 35px;
+    color: white;
+}
+
+.titulo {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.subtitulo {
+    font-size: 15px;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+.buscador {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+#entrada-lugar {
+    flex: 1;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s;
+}
+
+#entrada-lugar:focus {
+    outline: none;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+#btn-buscar {
+    padding: 15px 28px;
+    background: linear-gradient(135deg, #f97316, #fb923c);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(249, 115, 22, 0.35);
+    transition: all 0.3s ease;
+}
+
+#btn-buscar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(249, 115, 22, 0.45);
+}
+
+.contenedor-mapa {
+    height: 340px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+    margin-bottom: 25px;
+    border: 4px solid white;
+}
+
+#mapa {
+    width: 100%;
+    height: 100%;
+}
+
+.caja-info {
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    color: #1e293b;
+}
+
+.mensaje-inicio {
+    text-align: center;
+    color: #64748b;
+}
+
+.icono {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.mensaje-inicio h3 {
+    font-size: 20px;
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+.dato {
+    padding: 14px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.dato:last-child {
+    border-bottom: none;
+}
+
+.etiqueta {
+    font-weight: 600;
+    color: #0369a1;
+    display: inline-block;
+    min-width: 140px;
+}
+
+.nombre-lugar {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0c4a6e;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.estado-clima {
+    font-size: 18px;
+    font-weight: 500;
+    color: #f97316;
+}
